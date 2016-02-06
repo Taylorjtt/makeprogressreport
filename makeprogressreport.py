@@ -48,6 +48,7 @@ else:
    dataFile = open('userData.txt')
    firstName = dataFile.readline().rstrip()
    lastName = dataFile.readline().rstrip()
+   print('Hello, '+firstName+' '+lastName+'!')
    dataFile.close()
 
    
