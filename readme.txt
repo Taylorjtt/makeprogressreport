@@ -10,6 +10,6 @@ setup steps
 2.Once you have python installed open a cmd prompt and run
   python -m pip install openpyxl
   This installs the library to edit excel worksheets
-1. extract the Progress_Template.xlsx and makeprogressreport.py files to the folder where
+3. extract the Progress_Template.xlsx and makeprogressreport.py files to the folder where
    you save  your progress reports
-2. run makeprogressreport.py
+4. run makeprogressreport.py
