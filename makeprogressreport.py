@@ -60,11 +60,14 @@ extension = '.xlsx'
 
 #figure out what last saturday's date was
 today = datetime.date.today()
-idx = (today.weekday()+1)%7
-sat = today - datetime.timedelta(7+idx-6)
+if (today.weekday() == 5):
+   sat = today
+else:
+   idx = (today.weekday()+1)%7
+   sat = today - datetime.timedelta(7+idx-6)
 
 #create file name
-fileName = str(sat.year)+str(sat.month).zfill(2)+str(sat.day)+firstName+lastName+'Progress'
+fileName = str(sat.year)+str(sat.month).zfill(2)+str(sat.day).zfill(2)+firstName+lastName+'Progress'
 fileName = fileName[2:]
 
 #check if the file already exists
